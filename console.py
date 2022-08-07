@@ -20,7 +20,7 @@ class HBNBCommand(cmd.Cmd):
         '** value missing **',
         ]
 
-    def preloop(self):
+    def cmdloop(self):
         """
         handles intro to command interpreter
         """
