@@ -20,7 +20,7 @@ class HBNBCommand(cmd.Cmd):
         '** value missing **',
         ]
 
-    def cmdloop(self):
+    def preloop(self):
         """
         handles intro to command interpreter
         """
@@ -99,13 +99,13 @@ class HBNBCommand(cmd.Cmd):
         arg = arg.split()
         error = self.__class_err(arg)
 
-    def do_quit(self, line):
+    def quit(self, line):
         """quit: quit
         USAGE: Command to quit the program
         """
         return True
 
-    def do_EOF(self, line):
+    def EOF(self, line):
         """function to handle EOF"""
         print()
         return True
